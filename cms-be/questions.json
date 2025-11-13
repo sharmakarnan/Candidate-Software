@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "question": "Which data structure is used for implementing recursion?",
+    "options": [
+      "Array",
+      "Stack",
+      "Queue",
+      "Linked List"
+    ],
+    "correct": "B"
+  }
+]
