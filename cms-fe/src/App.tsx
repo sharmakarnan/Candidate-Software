@@ -94,6 +94,8 @@ import Results from "./components/Test/Results";
 import AdminViewCandidates from "./components/AdminViewCandidates";
 import AdminOnboarding from "./components/AdminOnboarding";
 import AdminQuestions from "./components/AdminQuestions";
+import AdminTestGenerator from "./components/AdminTestGenerator";
+import AdminViewTestAnswers from "./components/AdminViewTestAnswers";
 
 interface CandidateData {
   id: number;
@@ -147,6 +149,9 @@ const App: React.FC = () => {
               <Link to="/admin/questions" className="hover:text-green-600 transition">
                    Manage Questions
                </Link>
+              <Link to="/admin/generate-test" className="hover:text-green-600 transition">
+               Generate Test
+               </Link>
 
 
           </div>
@@ -196,7 +201,7 @@ const App: React.FC = () => {
           />
 
           {/* Candidate Test Page */}
-          <Route path="/candidate/test/:testId" element={<TestPage />} />
+          <Route path="/tests/:testId" element={<TestPage />} />
 
           {/* Test Submitted Page */}
           <Route path="/test-submitted" element={<TestSubmitted />} />
@@ -206,6 +211,8 @@ const App: React.FC = () => {
           <Route path="/admin/view-candidates" element={<AdminViewCandidates />} />
           <Route path="/hr/onboarding" element={<AdminOnboarding />} />
           <Route path="/admin/questions" element={<AdminQuestions />} />
+            <Route path="/admin/generate-test" element={<AdminTestGenerator />} />
+           <Route path="/admin/test-answers/:testId" element={<AdminViewTestAnswers />} />
 
 
 

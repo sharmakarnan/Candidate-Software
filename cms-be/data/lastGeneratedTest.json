@@ -1,0 +1,135 @@
+{
+  "generatedAt": 1763203178614,
+  "questions": [
+    {
+      "id": 4,
+      "question": "Which command is used to fetch data from a database?",
+      "options": [
+        "GET",
+        "SELECT",
+        "FETCH",
+        "PULL"
+      ],
+      "correct": "SELECT",
+      "category": "sql",
+      "questionType": "mcq"
+    },
+    {
+      "id": 9,
+      "question": "Java collections framework includes?",
+      "options": [
+        "List, Set, Map",
+        "int, char, float",
+        "HTML, CSS, JS",
+        "TCP, UDP"
+      ],
+      "correct": "List, Set, Map",
+      "category": "java",
+      "questionType": "mcq"
+    },
+    {
+      "id": 11,
+      "question": "Which of the following is NOT a Java feature?",
+      "options": [
+        "Object-Oriented",
+        "Robust",
+        "Dynamic",
+        "No Pointers"
+      ],
+      "correct": "No Pointers",
+      "category": "java",
+      "questionType": "mcq"
+    },
+    {
+      "id": 31,
+      "question": "Which keyword is used to create a subclass in Java?",
+      "options": [
+        "super",
+        "inherits",
+        "extends",
+        "implements"
+      ],
+      "correct": "extends",
+      "category": "java",
+      "questionType": "theory"
+    },
+    {
+      "id": 18,
+      "question": "Which annotation marks a class as a REST controller?",
+      "options": [
+        "@Service",
+        "@Entity",
+        "@RestController",
+        "@Controller"
+      ],
+      "correct": "@RestController",
+      "category": "spring",
+      "questionType": "mcq"
+    },
+    {
+      "id": 17,
+      "question": "Spring Boot runs on which server by default?",
+      "options": [
+        "NGINX",
+        "Apache",
+        "Tomcat",
+        "IIS"
+      ],
+      "correct": "Tomcat",
+      "category": "spring",
+      "questionType": "mcq"
+    },
+    {
+      "id": 24,
+      "question": "Which SQL statement deletes a table?",
+      "options": [
+        "DELETE TABLE",
+        "DROP TABLE",
+        "REMOVE TABLE",
+        "ERASE TABLE"
+      ],
+      "correct": "DROP TABLE",
+      "category": "sql",
+      "questionType": "mcq"
+    },
+    {
+      "id": 2,
+      "question": "Which keyword is used to inherit a class in Java?",
+      "options": [
+        "super",
+        "extends",
+        "implements",
+        "inherit"
+      ],
+      "correct": "extends",
+      "category": "java",
+      "questionType": "mcq"
+    },
+    {
+      "id": 21,
+      "question": "React components must start with?",
+      "options": [
+        "lowercase letter",
+        "uppercase letter",
+        "number",
+        "underscore"
+      ],
+      "correct": "uppercase letter",
+      "category": "react",
+      "questionType": "mcq"
+    },
+    {
+      "id": 10,
+      "question": "Which SQL clause is used to filter rows?",
+      "options": [
+        "ORDER BY",
+        "WHERE",
+        "GROUP BY",
+        "JOIN"
+      ],
+      "correct": "WHERE",
+      "category": "sql",
+      "questionType": "mcq"
+    }
+  ]
+}

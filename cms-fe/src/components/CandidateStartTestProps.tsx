@@ -16,15 +16,36 @@ const CandidateStartTest: React.FC<CandidateStartTestProps> = ({ candidate }) =>
   const handleStartTest = async () => {
     try {
       const res = await api.post("/tests/start", { candidate_id: candidate.id });
-      if (res.data?.questions) {
-        sessionStorage.setItem("testQuestions", JSON.stringify(res.data.questions));
-        navigate(`/candidate/test/${res.data.test_id}`);
+
+      if (res.data?.questions && res.data?.test_id) {
+        const test_id = res.data.test_id;
+        const questions = res.data.questions;
+
+        // ✔ Save questions for TestPage
+        sessionStorage.setItem("testQuestions", JSON.stringify(questions));
+
+        // ✔ Save active test for timer, resume etc.
+        localStorage.setItem(
+          "activeTest",
+          JSON.stringify({
+            test_id,
+            questions,
+            answers: {},
+            startTime: Date.now(),
+            duration: 1200, // 20 minutes
+          })
+        );
+
+        // ✔ Correct route to test page
+        navigate(`/tests/${test_id}`);
       } else {
-        alert("❌ Failed to start test. Please try again.");
+        alert("❌ Failed to start test.");
       }
     } catch (err: any) {
       if (err.response?.status === 403) {
         alert("⚠️ You have already completed the test!");
+      } else if (err.response?.status === 400) {
+        alert("⚠️ No generated test found. Admin must generate test first.");
       } else {
         alert("❌ Something went wrong while starting the test.");
       }

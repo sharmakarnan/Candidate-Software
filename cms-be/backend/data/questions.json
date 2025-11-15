@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "question": "What is the output of this code?",
+    "options": [
+      "15 Hello 15",
+      "15 Hello 510",
+      "15 Hello 5 10",
+      "Compilation error"
+    ],
+    "correct": "15 Hello 510",
+    "category": "java",
+    "questionType": "program"
+  },
+  {
+    "id": 2,
+    "question": "Which keyword is used to inherit a class in Java?",
+    "options": [
+      "extends",
+      "implements",
+      "inherits",
+      "super"
+    ],
+    "correct": "extends",
+    "category": "java",
+    "questionType": "theory"
+  },
+  {
+    "id": 3,
+    "question": "What is the default value of a boolean variable?",
+    "options": [
+      "true",
+      "false",
+      "null",
+      "0"
+    ],
+    "correct": "false",
+    "category": "java",
+    "questionType": "theory"
+  },
+  {
+    "id": 4,
+    "question": "Which of the following is NOT an OOP concept?",
+    "options": [
+      "Polymorphism",
+      "Inheritance",
+      "Abstraction",
+      "Compilation"
+    ],
+    "correct": "Compilation",
+    "category": "java",
+    "questionType": "theory"
+  },
+  {
+    "id": 5,
+    "question": "What is the size of int in Java?",
+    "options": [
+      "2 bytes",
+      "4 bytes",
+      "8 bytes",
+      "Depends on OS"
+    ],
+    "correct": "4 bytes",
+    "category": "java",
+    "questionType": "theory"
+  },
+  {
+    "id": 6,
+    "question": "Which SQL clause is used to filter records?",
+    "options": [
+      "SELECT",
+      "WHERE",
+      "GROUP BY",
+      "JOIN"
+    ],
+    "correct": "WHERE",
+    "category": "sql",
+    "questionType": "theory"
+  },
+  {
+    "id": 7,
+    "question": "What does the COUNT() function do?",
+    "options": [
+      "Counts rows",
+      "Counts table size",
+      "Counts NULL values",
+      "Counts columns"
+    ],
+    "correct": "Counts rows",
+    "category": "sql",
+    "questionType": "theory"
+  },
+  {
+    "id": 8,
+    "question": "Which join returns only matching rows?",
+    "options": [
+      "LEFT JOIN",
+      "RIGHT JOIN",
+      "INNER JOIN",
+      "FULL JOIN"
+    ],
+    "correct": "INNER JOIN",
+    "category": "sql",
+    "questionType": "theory"
+  },
+  {
+    "id": 9,
+    "question": "What is the default embedded server in Spring Boot?",
+    "options": [
+      "Tomcat",
+      "Jetty",
+      "Undertow",
+      "Glassfish"
+    ],
+    "correct": "Tomcat",
+    "category": "spring",
+    "questionType": "theory"
+  },
+  {
+    "id": 10,
+    "question": "Which annotation marks a class as a REST controller?",
+    "options": [
+      "@RestController",
+      "@Controller",
+      "@Service",
+      "@ApiController"
+    ],
+    "correct": "@RestController",
+    "category": "spring",
+    "questionType": "theory"
+  },
+  {
+    "id": 11,
+    "question": "Which hook is used to store state in a functional component?",
+    "options": [
+      "useRef",
+      "useEffect",
+      "useState",
+      "useMemo"
+    ],
+    "correct": "useState",
+    "category": "react",
+    "questionType": "theory"
+  },
+  {
+    "id": 12,
+    "question": "React uses ____ for UI updates.",
+    "options": [
+      "Virtual DOM",
+      "Real DOM",
+      "Shadow DOM",
+      "HTML DOM"
+    ],
+    "correct": "Virtual DOM",
+    "category": "react",
+    "questionType": "theory"
+  }
+]

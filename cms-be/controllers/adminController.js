@@ -54,26 +54,51 @@ export const getCandidates = async (req, res) => {
 // ✅ View all registered candidates
 export const viewRegisteredCandidates = async (req, res) => {
   try {
+    // const [rows] = await db.query(`
+    //   SELECT 
+    //     c.id,
+    //     c.candidate_name,
+    //     c.candidate_email,
+    //     c.position,
+    //     c.username,
+    //     c.status,
+    //     r.full_name,
+    //     r.phone,
+    //     r.gender,
+    //     r.education,
+    //     r.experience,
+    //     r.skills,
+    //     r.resume_link
+    //   FROM candidates c
+    //   LEFT JOIN candidate_register_details r 
+    //     ON c.id = r.candidate_id
+    //   WHERE c.status IN ('REGISTER_COMPLETED', 'TEST_PENDING', 'TEST_COMPLETED', 'SELECTED', 'REJECTED')
+    //   ORDER BY c.created_at DESC
+    // `);
+
     const [rows] = await db.query(`
       SELECT 
-        c.id,
-        c.candidate_name,
-        c.candidate_email,
-        c.position,
-        c.username,
-        c.status,
-        r.full_name,
-        r.phone,
-        r.gender,
-        r.education,
-        r.experience,
-        r.skills,
-        r.resume_link
-      FROM candidates c
-      LEFT JOIN candidate_register_details r 
-        ON c.id = r.candidate_id
-      WHERE c.status IN ('REGISTER_COMPLETED', 'TEST_PENDING', 'TEST_COMPLETED', 'SELECTED', 'REJECTED')
-      ORDER BY c.created_at DESC
+  c.id,
+  c.candidate_name,
+  c.candidate_email,
+  c.position,
+  c.username,
+  c.status,
+  c.created_at,   
+  r.full_name,
+  r.phone,
+  r.gender,
+  r.education,
+  r.experience,
+  r.skills,
+  r.resume_link
+FROM candidates c
+LEFT JOIN candidate_register_details r 
+  ON c.id = r.candidate_id
+WHERE c.status IN 
+ ('REGISTER_COMPLETED','TEST_PENDING','TEST_COMPLETED','SELECTED','REJECTED')
+ORDER BY c.created_at DESC
+
     `);
 
     res.json(rows);
