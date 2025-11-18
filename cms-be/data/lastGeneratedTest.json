@@ -1,95 +1,43 @@
 {
-  "generatedAt": 1763203178614,
+  "generatedAt": 1763383292051,
   "questions": [
     {
-      "id": 4,
-      "question": "Which command is used to fetch data from a database?",
+      "id": 10,
+      "question": "Which SQL clause is used to filter rows?",
       "options": [
-        "GET",
-        "SELECT",
-        "FETCH",
-        "PULL"
+        "ORDER BY",
+        "WHERE",
+        "GROUP BY",
+        "JOIN"
       ],
-      "correct": "SELECT",
+      "correct": "WHERE",
       "category": "sql",
       "questionType": "mcq"
     },
     {
-      "id": 9,
-      "question": "Java collections framework includes?",
+      "id": 25,
+      "question": "Which hook returns a memoized value?",
       "options": [
-        "List, Set, Map",
-        "int, char, float",
-        "HTML, CSS, JS",
-        "TCP, UDP"
+        "useRef",
+        "useMemo",
+        "useState",
+        "useCallback"
       ],
-      "correct": "List, Set, Map",
-      "category": "java",
+      "correct": "useMemo",
+      "category": "react",
       "questionType": "mcq"
     },
     {
-      "id": 11,
-      "question": "Which of the following is NOT a Java feature?",
+      "id": 27,
+      "question": "Which Java keyword is used to inherit interfaces?",
       "options": [
-        "Object-Oriented",
-        "Robust",
-        "Dynamic",
-        "No Pointers"
-      ],
-      "correct": "No Pointers",
-      "category": "java",
-      "questionType": "mcq"
-    },
-    {
-      "id": 31,
-      "question": "Which keyword is used to create a subclass in Java?",
-      "options": [
-        "super",
-        "inherits",
         "extends",
-        "implements"
+        "implements",
+        "inherits",
+        "calls"
       ],
-      "correct": "extends",
+      "correct": "implements",
       "category": "java",
-      "questionType": "theory"
-    },
-    {
-      "id": 18,
-      "question": "Which annotation marks a class as a REST controller?",
-      "options": [
-        "@Service",
-        "@Entity",
-        "@RestController",
-        "@Controller"
-      ],
-      "correct": "@RestController",
-      "category": "spring",
-      "questionType": "mcq"
-    },
-    {
-      "id": 17,
-      "question": "Spring Boot runs on which server by default?",
-      "options": [
-        "NGINX",
-        "Apache",
-        "Tomcat",
-        "IIS"
-      ],
-      "correct": "Tomcat",
-      "category": "spring",
-      "questionType": "mcq"
-    },
-    {
-      "id": 24,
-      "question": "Which SQL statement deletes a table?",
-      "options": [
-        "DELETE TABLE",
-        "DROP TABLE",
-        "REMOVE TABLE",
-        "ERASE TABLE"
-      ],
-      "correct": "DROP TABLE",
-      "category": "sql",
       "questionType": "mcq"
     },
     {
@@ -106,29 +54,81 @@
       "questionType": "mcq"
     },
     {
-      "id": 21,
-      "question": "React components must start with?",
+      "id": 9,
+      "question": "Java collections framework includes?",
       "options": [
-        "lowercase letter",
-        "uppercase letter",
-        "number",
-        "underscore"
+        "List, Set, Map",
+        "int, char, float",
+        "HTML, CSS, JS",
+        "TCP, UDP"
       ],
-      "correct": "uppercase letter",
+      "correct": "List, Set, Map",
+      "category": "java",
+      "questionType": "mcq"
+    },
+    {
+      "id": 23,
+      "question": "Java code is compiled into?",
+      "options": [
+        "Machine code",
+        "Bytecode",
+        "Binary code",
+        "Executable"
+      ],
+      "correct": "Bytecode",
+      "category": "java",
+      "questionType": "mcq"
+    },
+    {
+      "id": 1,
+      "question": "What is Java?",
+      "options": [
+        "A programming language",
+        "A database",
+        "An operating system",
+        "A web server"
+      ],
+      "correct": "A programming language",
+      "category": "java",
+      "questionType": "mcq"
+    },
+    {
+      "id": 5,
+      "question": "React is mainly used for?",
+      "options": [
+        "Backend API",
+        "Mobile OS",
+        "Building UI",
+        "Database structure"
+      ],
+      "correct": "Building UI",
       "category": "react",
       "questionType": "mcq"
     },
     {
-      "id": 10,
-      "question": "Which SQL clause is used to filter rows?",
+      "id": 4,
+      "question": "Which command is used to fetch data from a database?",
       "options": [
-        "ORDER BY",
-        "WHERE",
-        "GROUP BY",
-        "JOIN"
+        "GET",
+        "SELECT",
+        "FETCH",
+        "PULL"
       ],
-      "correct": "WHERE",
+      "correct": "SELECT",
       "category": "sql",
+      "questionType": "mcq"
+    },
+    {
+      "id": 7,
+      "question": "Spring Boot is used for?",
+      "options": [
+        "Game development",
+        "Web application development",
+        "Mobile development",
+        "Operating system"
+      ],
+      "correct": "Web application development",
+      "category": "spring",
       "questionType": "mcq"
     }
   ]
